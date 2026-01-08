@@ -29,25 +29,23 @@ public class Usuario {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer idusuario;
 	
-	// Validaciones agregadas
+	
 	@NotBlank(message = "El nombre de usuario es obligatorio")
 	@Size(min = 3, max = 50, message = "El nombre de usuario debe tener entre 3 y 50 caracteres")
 	private String nomusuario;
-	
-	// Validaciones agregadas
+
 	@NotBlank(message = "La contraseña es obligatoria")
 	@Size(min = 4, message = "La contraseña debe tener al menos 4 caracteres")
 	private String password;
 	
-	// Validaciones agregadas
+
 	@NotBlank(message = "El nombre es obligatorio")
 	private String nombres;
 	
-	// Validaciones agregadas
+
 	@NotBlank(message = "Los apellidos son obligatorios")
 	private String apellidos;
-	
-	// Validaciones agregadas
+
 	@NotBlank(message = "El email es obligatorio")
 	@Email(message = "El email debe ser válido")
 	private String email;
